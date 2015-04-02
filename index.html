@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BPI Site</title>
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="customcss/main.css"/>
+    <link rel="stylesheet" href="customcss/bjqs.css"/>
+    <!--jQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bjqs-1.3.js"></script>
+    <!--custom-->
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            // hides show button when the page is
+            // fully loaded in the Browser
+            $("#show").hide();
+
+            // slides Up the nav bar
+            // and hides the  "HIDE MENU" button,
+            // and displays "SHOW MENU" button
+            $("#hide").click(function ()
+            {
+                $("#slide_nav").slideUp("medium", function ()
+                {
+                    $("#hide").hide();
+                    $("#show").show();
+                });
+
+            });
+
+            // slides  Down the nav bar
+            // and hides the "SHOW MENU" button,
+            // and displays "HIDE MENU" button
+            $("#show").click(function ()
+            {
+                $("#slide_nav").slideDown("medium", function ()
+                {
+                    $("#show").hide();
+                    $("#hide").show();
+                });
+            });
+
+            // hides footer
+            $("#s_close").click(function ()
+            {
+                $("footer").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<!--header-->
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <img src="images/top_left_logo.gif" alt="Site Logo" id="logo" alt="Site Logo" title="Site Logo"/>
+            </div>
+            <nav class="span6" style="height: 80px;">
+                <a href="#" class="socials">
+                    <img src="images/some_bird.gif"/>
+                </a>
+                <a href="#" class="socials">
+                    <img src="images/you_tube.gif"/>
+                </a>
+                <a href="#" class="socials">
+                    <img src="images/some_watch.gif"/>
+                </a>
+                <a href="#" class="socials">
+                    <img src="images/face_book.gif"/>
+                </a>
+            </nav>
+        </div>
+    </div>
+</header>
+<!--header-->
+
+<!--sliding nav menu-->
+<nav id="slide_nav">
+    <!--slide host-->
+    <div class="container">
+        <div class="row" style="width: 960px; padding-left: 20px;">
+            <!--BPI-->
+            <div class="span4" id="bpi">
+                <header class="head">
+                    <h3>BPI</h3>
+                </header>
+                <p>
+                    <a href="#">Home</a>
+                </p>
+
+                <p>
+                    <a href="#">About Us</a>
+                </p>
+
+                <p>
+                    <a href="#">Products List</a>
+                </p>
+
+                <p>
+                    <a href="#">Discounts</a>
+                </p>
+
+                <p>
+                    <a href="#">Complaints</a>
+                </p>
+            </div>
+            <!--BPI-->
+            <!--CATEGORY-->
+            <div class="span4" id="cat">
+                <header class="head">
+                    <h3>Category</h3>
+                </header>
+                <p>
+                    <a href="#">Home</a>
+                </p>
+
+                <p>
+                    <a href="#">About Us</a>
+                </p>
+
+                <p>
+                    <a href="#">Products List</a>
+                </p>
+
+                <p>
+                    <a href="#">Discounts</a>
+                </p>
+
+                <p>
+                    <a href="#">Complaints</a>
+                </p>
+            </div>
+            <!--CATEGORY-->
+            <!--SECOND-->
+            <div class="span4" id="sec">
+                <header class="head">
+                    <h3>Second</h3>
+                </header>
+                <p>
+                    <a href="#">Home</a>
+                </p>
+
+                <p>
+                    <a href="#">About Us</a>
+                </p>
+
+                <p>
+                    <a href="#">Products List</a>
+                </p>
+
+                <p>
+                    <a href="#">Discounts</a>
+                </p>
+
+                <p>
+                    <a href="#">Complaints</a>
+                </p>
+            </div>
+            <!--SECOND-->
+        </div>
+    </div>
+</nav>
+<!--sliding nav menu-->
+<!--<hide nav button-->
+<div class="container" style="border: 0;">
+    <a href="#" id="hide">HIDE MENU</a>
+    <a href="#" id="show">SHOW MENU</a>
+</div>
+<!--<hide nav button-->
+<!--jumbo-->
+<br/>
+
+<div class="container">
+    <div class="row">
+        <!--1-->
+        <div class="span12">
+            <div id="banner-fade">
+                <ul class="bjqs">
+                    <li>
+                        <img src="images/article.gif" style="width: 960px; height: 400px;">
+                    </li>
+                    <li>
+                        <video width="100%" height="100%" controls="controls" style="background-color: black;">
+                            <source src="videos/mov_bbb.ogg.mp4" type="video/mp4">
+                            <source src="videos/mov_bbb.ogg" type="video/ogg">
+                        </video>
+                    </li>
+                </ul>
+            </div>
+            <script class="secret-source">
+                jQuery(document).ready(function ($)
+                {
+
+                    $('#banner-fade').bjqs({
+                        height: 400,
+                        width: 960,
+                        responsive: true,
+                        showmarkers: false,
+                        nexttext: '<p class="next">Next</p>',
+                        prevtext: '<p class="next">Prev</p>',
+                        automatic: false
+                    });
+
+                });
+            </script>
+        </div>
+        <!--2-->
+        <div class="span">
+            <header style="color: white;">
+
+            </header>
+        </div>
+    </div>
+    <!--row-->
+</div>
+<br/>
+<!--flasher-->
+<div class="container" id="flasher">
+<h2 style="margin: auto;">Order Products Now</h2>
+</div>
+<!--flasher-->
+<br/>
+<!--orders-->
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <img src="images/product.gif" class="products"/>
+            <br/>
+            <a class="orders">Order Now</a>
+        </div>
+        <div class="span3">
+            <img src="images/product.gif" class="products"/>
+            <br/>
+            <a class="orders">Order Now</a>
+        </div>
+        <div class="span3">
+            <img src="images/product.gif" class="products"/>
+            <br/>
+            <a class="orders">Order Now</a>
+        </div>
+        <div class="span3">
+            <img src="images/product.gif" class="products"/>
+            <br/>
+            <a class="orders">Order Now</a>
+        </div>
+    </div>
+    <br/>
+
+    <div class="row">
+        <div class="span3">
+            <img src="images/product.gif" class="products"/>
+            <br/>
+            <a class="orders">Order Now</a>
+        </div>
+        <div class="span3">
+            <img src="images/product.gif" class="products"/>
+            <br/>
+            <a class="orders">Order Now</a>
+        </div>
+        <div class="span3">
+            <img src="images/product.gif" class="products"/>
+            <br/>
+            <a class="orders">Order Now</a>
+        </div>
+        <div class="span3">
+            <img src="images/product.gif" class="products"/>
+            <br/>
+            <a class="orders">Order Now</a>
+        </div>
+    </div>
+</div>
+<br/>
+<!--orders-->
+<!--footer-->
+<footer class="navbar-fixed-bottom" id="foot">
+    <div class="container" style="text-align: center;">
+        &copy; evgenivasilev1209@abv.bg
+        <span id="s_close">X</span>
+    </div>
+</footer>
+<!--footer-->
+</body>
+</html>
